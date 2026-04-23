@@ -1,22 +1,29 @@
 create database Company1
 use Company1
 
-create table Employees(
-Id int primary key identity,
-[Name] varchar(30) not null, 
-Surname varchar(30) not null,
-Age int , 
-Salary decimal(18, 2), 
-Position varchar(30), 
-IsDeleted bit,
-CityId int foreign key references Cities(Id)
-)
 
 create table Cities(
 Id int PRIMARY key identity,
 [Name] nvarchar (40)not null,
 CountryId int foreign key references Countries(Id)
 )
+
+
+
+
+
+create table Employees(
+Id int primary key identity,
+[Name] varchar(40) not null, 
+Surname varchar(40) not null,
+Age int , 
+Salary decimal(20, 2), 
+Position varchar(20), 
+IsDeleted bit,
+CityId int foreign key references Cities(Id)
+)
+
+
 
 create table Countries(
 Id int PRIMARY  key identity,
