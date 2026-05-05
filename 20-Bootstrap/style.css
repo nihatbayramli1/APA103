@@ -1,0 +1,290 @@
+/* --- Global Sıfırlama və Təməl --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #4a4a4a; /* Daha yumşaq tünd boz */
+    line-height: 1.7;
+    background-color: #ffffff;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+    color: #2c3e50; /* Tünd göy tonu */
+    letter-spacing: -0.5px;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* --- Konteyner və Ümumi Class-lar --- */
+.wrapper {
+    width: 100%;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.content-center {
+    text-align: center;
+}
+
+.light-text {
+    color: #f8f9fa;
+}
+
+.soft-opacity {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.highlight-bg {
+    background-color: #3498db; /* Orijinal narıncı əvəzinə professional göy */
+}
+
+.dark-panel {
+    background-color: #1a252f;
+}
+
+.ghost-white {
+    background-color: #ffffff;
+    color: #3498db;
+}
+
+/* --- Bölmə Boşluqları --- */
+.info-block, 
+.services-grid, 
+.cta-banner, 
+.contact-area {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+/* --- Başlıqlar və Dekor --- */
+.main-heading {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.sub-heading {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.accent-divider {
+    width: 70px;
+    height: 3px;
+    background-color: #3498db;
+    border: none;
+    margin: 2rem auto;
+}
+
+.white-divider {
+    background-color: #ffffff;
+}
+
+.desc-text {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3.5rem;
+    font-size: 1.1rem;
+}
+
+/* --- Düymə Dizaynı --- */
+.action-trigger {
+    display: inline-block;
+    font-weight: 600;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border-radius: 4px; /* Orijinal dairəvi idi, bunu künclü etdik */
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.action-trigger.highlight-bg:hover {
+    background-color: #2980b9;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+/* --- Naviqasiya (Menyu) --- */
+.main-navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid #eee;
+    padding: 1.2rem 0;
+    z-index: 999;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-logo {
+    color: #2c3e50;
+    font-weight: 800;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #34495e;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
+
+/* --- Hero Showcase --- */
+.prime-showcase {
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+    background: linear-gradient(rgba(44, 62, 80, 0.75), rgba(44, 62, 80, 0.75)), 
+                url('assets/images/header.jpg') center center / cover no-repeat;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+/* --- Xidmətlər Qridi --- */
+.feature-layout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    margin-top: 4rem;
+}
+
+.brand-icon {
+    font-size: 2.8rem;
+    color: #3498db;
+    margin-bottom: 1.5rem;
+}
+
+.dimmed-text {
+    font-size: 0.95rem;
+    color: #7f8c8d;
+}
+
+/* --- Portfolio Qalereyası --- */
+.mosaic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-item {
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+}
+
+.fluid-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(44, 62, 80, 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.gallery-item:hover .fluid-img {
+    transform: scale(1.1);
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+/* --- Əlaqə Formu --- */
+.custom-form {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.form-control {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+    border: 2px solid #ecf0f1;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.multi-line {
+    height: 160px;
+    resize: none;
+}
+
+/* --- Footer --- */
+.main-footer {
+    background-color: #fdfdfd;
+    padding: 3rem 0;
+    color: #bdc3c7;
+    font-size: 0.9rem;
+}
+
+/* --- Adaptivlik (Responsive) --- */
+@media (max-width: 1024px) {
+    .feature-layout {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .mosaic-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 2.2rem;
+    }
+    .mobile-btn {
+        display: block;
+        font-size: 1.6rem;
+        color: #2c3e50;
+    }
+    .nav-links {
+        display: none; /* Bu hissə JS və ya checkbox ilə açılacaq */
+    }
+    .feature-layout, .mosaic-grid {
+        grid-template-columns: 1fr;
+    }
+}

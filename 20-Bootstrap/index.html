@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Studio | Modern Solutions</title>
+    <!-- Fontu dəyişdim: Roboto və Open Sans daha modern görünür -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="home-top">
+
+    <nav class="main-navigation">
+        <div class="wrapper nav-flex">
+            <a href="#home-top" class="brand-logo">CREATIVE STUDIO</a>
+            <input type="checkbox" id="nav-handler" hidden>
+            <label for="nav-handler" class="mobile-btn"><i class="fa-solid fa-bars-staggered"></i></label>
+            <div class="nav-links">
+                <a href="#discover">Kəşf et</a>
+                <a href="#solutions">Xidmətlər</a>
+                <a href="#gallery">İşlərimiz</a>
+                <a href="#contact-us">Əlaqə</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="prime-showcase">
+        <div class="wrapper content-center">
+            <h1 class="main-heading light-text">Layihələriniz Üçün Professional Veb Həllər</h1>
+            <div class="accent-divider"></div>
+            <p class="desc-text light-text soft-opacity">Biz sizə ən son texnologiyalarla təchiz olunmuş, sürətli və effektiv veb-saytlar təqdim edirik. İndi başlayın və rəqəmsal dünyada yerinizi alın!</p>
+            <a class="action-trigger highlight-bg light-text" href="#discover">DAHA ÇOX ÖYRƏN</a>
+        </div>
+    </header>
+
+    <section class="info-block highlight-bg" id="discover">
+        <div class="wrapper content-center">
+            <h2 class="sub-heading light-text">İstədiyiniz Hər Şey Bir Ünvanda</h2>
+            <div class="accent-divider white-divider"></div>
+            <p class="desc-text light-text soft-opacity">Agentliyimiz biznesinizi böyütmək üçün lazım olan bütün alətləri təqdim edir. Açıq qaynaqlı, sürətli və tamamilə fərdiləşdirilə bilən dizaynlar!</p>
+            <a class="action-trigger ghost-white" href="#solutions">BAŞLAYAQ!</a>
+        </div>
+    </section>
+
+    <section class="services-grid" id="solutions">
+        <div class="wrapper content-center">
+            <h2 class="sub-heading">Xidmət Sahələrimiz</h2>
+            <div class="accent-divider"></div>
+            <div class="feature-layout">
+                <div class="feature-card">
+                    <i class="fa-solid fa-layer-group brand-icon"></i>
+                    <h3>Dayanıqlı Struktur</h3>
+                    <p class="dimmed-text">Kodlarımız hər zaman yenilənir və xətasız işləməsi üçün optimizasiya olunur.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-microchip brand-icon"></i>
+                    <h3>Müasir Texnologiya</h3>
+                    <p class="dimmed-text">Ən son kitabxanalar və asılılıqlar istifadə olunaraq təhlükəsizlik təmin edilir.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-rocket brand-icon"></i>
+                    <h3>Yüksək Sürət</h3>
+                    <p class="dimmed-text">Saytlarınız həm mobil, həm də masaüstü cihazlarda anında yüklənir.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-shield-halved brand-icon"></i>
+                    <h3>Tam Dəstək</h3>
+                    <p class="dimmed-text">İstənilən vaxt texniki dəstək və dizayn dəyişiklikləri üçün müraciət edə bilərsiniz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="work-gallery" id="gallery">
+        <div class="mosaic-grid">
+            <!-- Kart strukturu qaldı, amma classlar dəyişdi -->
+            <div class="gallery-item">
+                <img class="fluid-img" src="assets/images/1.jpg" alt="Work 1">
+                <div class="overlay">
+                    <div class="overlay-info">
+                        <p class="category-label">Dizayn</p>
+                        <h4 class="project-title">Layihə Adı</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Digər 5 şəkil üçün də eyni struktur tətbiq olunur -->
+            <!-- ... -->
+        </div>
+    </section>
+
+    <section class="cta-banner dark-panel content-center">
+        <div class="wrapper">
+            <h2 class="sub-heading light-text">Həllərimizi Pulsuz Sınaqdan Keçirin!</h2>
+            <a class="action-trigger ghost-white" href="#">İNDİ YÜKLƏ!</a>
+        </div>
+    </section>
+
+    <section class="contact-area" id="contact-us">
+        <div class="wrapper content-center">
+            <h2 class="sub-heading">Bizimlə Əlaqə Saxlayın</h2>
+            <div class="accent-divider"></div>
+            <p class="desc-text">Növbəti böyük layihənizə bizimlə başlamağa hazırsınız? Mesajınızı göndərin, 24 saat ərzində cavablayaq.</p>
+            
+            <form class="custom-form">
+                <input class="form-control" type="text" placeholder="Ad və Soyad" required />
+                <input class="form-control" type="email" placeholder="E-poçt ünvanı" required />
+                <input class="form-control" type="tel" placeholder="Telefon nömrəsi" />
+                <textarea class="form-control multi-line" placeholder="Mesajınız"></textarea>
+                <button class="action-trigger highlight-bg light-text full-width" type="submit">GÖNDƏR</button>
+            </form>
+
+            <div class="contact-info">
+                <i class="fa-solid fa-headset contact-icon"></i>
+                <p>+994 (55) 123-45-67</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer content-center">
+        <p>&copy; 2026 - Creative Studio Agency. Bütün hüquqlar qorunur.</p>
+    </footer>
+
+</body>
+</html>
